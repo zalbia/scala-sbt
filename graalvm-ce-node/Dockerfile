@@ -103,9 +103,9 @@ RUN set -ex \
   && node --version \
   && npm --version
 
-RUN npm i -g yarn \
+RUN npm i -g pnpm@6.0.2 \
   # smoke test
-  && yarn --version
+  && pnpm --version
 
 # Switch working directory back to root
 ## Users wanting to use this container as non-root should combine the two following arguments
